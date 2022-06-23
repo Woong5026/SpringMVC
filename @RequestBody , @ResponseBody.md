@@ -8,6 +8,7 @@
 
 @RequestBody 어노테이션과 @ResponseBody 어노테이션이 각각 HTTP요청 바디를 자바객체로 변환하고 자바객체를 다시 HTTP 응답 바디로 변환해준다. 
 
+<br/>
 
 #### @RequestBody 
 
@@ -43,6 +44,16 @@ HTTP 응답데이터(body)에 자바 객체가 매핑되어 전달 된다.
 
 
 #### @RequestBody / @ResponseBody 정리. 
+
+<br/>
+
+@RequestBody  
+* HTTP 요청 몸체를 자바 객체로 전달받음
+* HTTP 요청의 body 내용을 자바 객체로 매핑하는 역할
+
+@ResponseBody 
+* 자바 객체를 HTTP 응답 몸체로 전송함
+* 자바 객체를 HTTP 요청의 body 내용으로 매핑하는 역할
 
 <br/>
 
