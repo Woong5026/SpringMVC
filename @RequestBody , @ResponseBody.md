@@ -42,6 +42,18 @@ HTTP 응답데이터(body)에 자바 객체가 매핑되어 전달 된다.
 
 @Controller인 경우에 바디를 자바객체로 받기 위해서는 @ResponseBody 어노테이션을 반드시 명시해주어야한다. 
 
+<br/>
+
++) @Controller와 @RestController의 차이점
+
+@Controller의 역할은 Model 객체를 만들어 데이터를 담고 View를 반환하는 것이고, <br/>
+@RestController는 단순히 객체만을 반환하고 객체 데이터는 JSON 또는 XML 형식으로 HTTP 응답에 담아 전송 <br/>
+물론 @Controller도 @ResponseBody를 사용해서 만들 수 있지만 이런 방식은 RESTful 웹 서비스의 기본 동작이기 때문에 <br/>
+Spring은 @Controller와 @ResponseBody의 동작을 조합한 @RestController를 도입
+
+@Controller와 @RestController의 주요 차이점 중 하나는 @RestController를 표시하면 모든 메소드가 뷰 대신 객체로 작성
+
+<br/>
 
 #### @RequestBody / @ResponseBody 정리. 
 
